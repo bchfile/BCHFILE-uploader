@@ -40,6 +40,6 @@ this program is not tested on BTC network yet.
 
 Hints
 -----
-You need to prepare sufficient balance for uploading, a suggestion is 6 * (file_size * FEE) satoshis(assume the fee is FEE/bytes, FEE = 1 by default).
+You need to prepare sufficient balance for uploading, a suggestion is (6 * file_size * FEE) satoshis(assume the fee is FEE/bytes, FEE = 1 by default).
 
 The storage efficiency(file_size/all_transactions_size) is about 34%.
