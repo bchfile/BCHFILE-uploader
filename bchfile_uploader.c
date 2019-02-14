@@ -55,7 +55,8 @@ int cmd_run(const char* cmd, char* argv[], char* outstr)
     pid = fork();
     if (pid<0) {
         return 0;
-    } else if (pid==0) { /* child process */
+    }
+	else if (pid==0) { /* child process */
         dup2(pfd[1], STDOUT_FILENO);
         close(pfd[0]);
  
@@ -63,7 +64,8 @@ int cmd_run(const char* cmd, char* argv[], char* outstr)
         execvp(cmd, argv);
         close(pfd[1]);
         exit(0);
-    } else { /* parent process */
+    }
+	else { /* parent process */
         close(pfd[1]);
  
         /* print output from CGI */
