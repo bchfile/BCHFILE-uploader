@@ -24,8 +24,7 @@ Run it:
 
 $ ./bchfile your_filename txid_src vout_src balance_in
 
-The program will save all transactions to a file 'upload_TXs', then run sendtx to broadcast
-all TXs to the network.
+The program will save all transactions to a file 'upload_TXs', then run sendtx to broadcast all TXs to the network.
 
 $ ./sendtx
 
@@ -36,3 +35,11 @@ Uncomment '#define TESTNET' and recompile.
 For BTC
 -----------
 Uncomment '#define BTC' and recompile.
+
+this program is not tested on BTC network yet.
+
+Hints
+-----
+You need to prepare sufficient balance for uploading, a suggestion is 6*file_size*FEE satoshis(assume the fee is FEE/bytes, FEE = 1 by default).
+
+The storage efficiency(file_size/all_transactions_size) is about 34%.
