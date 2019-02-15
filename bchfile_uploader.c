@@ -725,8 +725,5 @@ int main( int argc, char *argv[] ) {
     }
     
     fclose(fp_alltx);
-    
-    cmd_run(argv[1],&argv[1],out_str);
-    printf("%s",out_str);
     return 0;
 }
